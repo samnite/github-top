@@ -12,7 +12,7 @@ const history = createBrowserHistory();
 
 const rootReducer = combineReducers({
   router: connectRouter(history),
-  project: projectReducer,
+  data: projectReducer,
 });
 
 export const createNewStore = state =>

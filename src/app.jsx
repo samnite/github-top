@@ -1,19 +1,21 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router';
-import { createBrowserHistory } from 'history';
-import store from './store/store';
+import styled from 'styled-components';
+import Users from './components/users';
+import Alert from './components/alert';
 
-const history = createBrowserHistory();
+const StyledContainer = styled.div`
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+`;
 
-function App() {
+const App = () => {
   return (
-    <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <div />
-      </ConnectedRouter>
-    </Provider>
+    <StyledContainer>
+      <Alert />
+      <Users />
+    </StyledContainer>
   );
-}
+};
 
 export default App;
