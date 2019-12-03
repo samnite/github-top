@@ -8,6 +8,7 @@
     "node": true
   },
   "rules": {
+    "react/prop-types": "off",
     "no-unused-vars": "off",
     "no-shadow": "off",
     "react/forbid-prop-types": 0,

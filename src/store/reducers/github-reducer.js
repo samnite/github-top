@@ -1,8 +1,7 @@
-import { GET_USERS, SET_LOADING, SET_ERRORS, CLEAR_ERRORS, GET_SINGLE_USER } from '../types';
+import { GET_USERS, SET_LOADING, SET_ERRORS, CLEAR_ERRORS } from '../types';
 
 const initialState = {
   users: [],
-  user: null,
   errors: null,
   loading: false,
 };
@@ -20,11 +19,6 @@ export default (state = initialState, action) => {
         users: action.payload,
         loading: false,
         errors: null,
-      };
-    case GET_SINGLE_USER:
-      return {
-        ...state,
-        user: action.payload,
       };
     case SET_ERRORS:
       return {
