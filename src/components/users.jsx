@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getUsers } from '../store/actions/github-actions';
-import UserItem from './userItem';
+import UserItem from './user-item';
 
 const Users = ({ getUsers, data: { users, loading } }) => {
   useEffect(() => {
