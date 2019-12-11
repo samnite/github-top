@@ -13,11 +13,12 @@ const Users = ({ getUsers, data: { users, loading } }) => {
   if (loading) {
     return <p>loading...</p>;
   }
-  return users
-    ? users.map(user => {
-        return <UserItem user={user.node} key={user.node.id} />;
-      })
-    : null;
+  return (
+    users &&
+    users.map(user => {
+      return <UserItem user={user.node} key={user.node.id} />;
+    })
+  );
 };
 
 const mapStateToProps = state => ({
