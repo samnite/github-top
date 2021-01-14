@@ -9,6 +9,7 @@ const StyledContainer = styled.div`
   padding: 0 2rem;
 `;
 
+//
 const App = () => {
   return (
     <StyledContainer>
